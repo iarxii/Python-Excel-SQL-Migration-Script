@@ -1,0 +1,12 @@
+# data folders
+DATA/*
+!DATA/
+
+# excel files
+.xlsx
+.csv
+
+# log file
+logs/*
+!logs/
+.log
