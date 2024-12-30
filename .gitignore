@@ -10,3 +10,6 @@ DATA/*
 logs/*
 !logs/
 .log
+
+# misc
+mycommands.txt

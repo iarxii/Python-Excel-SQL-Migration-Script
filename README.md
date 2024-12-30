@@ -21,22 +21,22 @@ The script allows the user to select the target database type (SQL Server, MySQL
    ```
 2. Run the script:
    ```bash
-   python script_name.py <db_type> <connection_string> <database_name> <excel_file>
+   python Upload_Data_DB.py <db_type> <connection_string> <database_name> <excel_file in the DATA folder> <add --continuous flag if all the sheets are part pf one table>
    ```
 
    Example for MySQL:
    ```bash
-   python script_name.py mysql "mysql+pymysql://user:password@localhost" my_database data.xlsx
+   python Upload_Data_DB.py mysql "mysql+pymysql://user:password@localhost" my_database data.xlsx --continuous
    ```
 
    Example for PostgreSQL:
    ```bash
-   python script_name.py postgresql "postgresql+psycopg2://user:password@localhost" my_database data.xlsx
+   python Upload_Data_DB.py postgresql "postgresql+psycopg2://user:password@localhost" my_database data.xlsx --continuous
    ```
 
    Example for SQL Server:
    ```bash
-   python script_name.py mssql "mssql+pyodbc://user:password@localhost/driver=ODBC+Driver+17+for+SQL+Server" my_database data.xlsx
+   python Upload_Data_DB.py mssql "mssql+pyodbc://user:password@localhost/driver=ODBC+Driver+17+for+SQL+Server" my_database data.xlsx --continuous
    ```
 
 ### Notes
