@@ -15,11 +15,20 @@ The script allows the user to select the target database type (SQL Server, MySQL
    - User specifies the database type, connection string, target database name, and Excel file via command-line arguments.
 
 ### Usage
-1. Install required packages:
+1. Run the create_folders.sh bash script or create a 'DATA' and 'logs' folder(s) manually
+   ```bash
+   bash create_folders.sh
+   ```
+   or
+   ```bash
+   ./create_folders.sh
+   ```
+
+3. Install required packages:
    ```bash
    pip install pandas sqlalchemy pymysql psycopg2 pyodbc
    ```
-2. Run the script:
+4. Run the script:
    ```bash
    python Upload_Data_DB.py <db_type> <connection_string> <database_name> <excel_file in the DATA folder> <add --continuous flag if all the sheets are part pf one table>
    ```
